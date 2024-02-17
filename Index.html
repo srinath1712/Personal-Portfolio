@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personal Portfolio Website HTML CSS and JavaScript</title>
+    <link rel = "icon" type="image/x-icon" href="assets/favicon.png"/>
+    <link
+        rel = "stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href = "style.css"/>
+</head>
+
+<body>
+<div class="container">
+    <section id="header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#"><span>Personal </span>Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </div>
+        <div class = "header-bottom">
+            <div class="bottom-left">
+                <h1 class="name"><span>Srinath Venugopal</span></h1>
+                <h3 class="professional">-Software Developer</h3>
+                <p class="short-desc">I am proficient at Web Developement & Software Development.</p>
+                <a href="assets/srinath_resume.pdf" class="btn-cv" target="_blank" download>Download CV</a>
+            </div>
+            <div class="bottom-right">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-left">
+            <img src = "assets/sri.jpeg" alt="sri.jpeg">
+        </div>
+        <div class="about-right">
+            <div class="section-title">
+                <h2 class="sub-title">About Me</h2>
+                <h3 class="title">Software Developer</h3>
+            </div>
+            <p class="desc">
+                I am a highly motivated candidate seeking opportunities in a respected company. I
+                bring expertise in HTML, CSS, JavaScript, Java, Spring boot and SQL. Additionally,
+                I possess strong problem-solving and logical reasoning skills. I am eager to learn new
+                things, enhance my existing knowledge, and contribute to both the organization and
+                my own professional development.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('educations')">Educations</p>
+                <p class="tab-links" onclick="openTab('projects')">Projects</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>
+                        <span>HTML</span>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                    </li>
+                    <li>
+                        <span>Java</span>
+                    </li>
+                    <li>
+                        <span>SpringBoot</span>
+                    </li>
+                    <li>
+                        <span>SQL</span>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="educations">
+                <ul>
+                    <li>
+                        <span>2021-2023</span> <br />
+                        MCA in Computer Application from Periyar Maniammai University.
+                    </li>
+                    <li>
+                        <span>2018-2021</span> <br />
+                        BCA in Computer Application from Periyar Maniammai University.
+                    </li>
+                    <li>
+                        <span>2016-2018</span> <br />
+                        HSC in Computer Science from Kalyana Sundaram Hr.Sec School.
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li>
+                        <span>2021-2023</span> <br />
+                        Line Following Robot - Java Programming.
+                    </li>
+                    <li>
+                        Personal Portfolio - Html, Css, JavaScript.
+                    </li>
+                    <li>
+                        Hospital Management System – Java Programming, JDBC MySQL.
+                    </li>
+                    <li>
+                        <span>2018-2021</span> <br />
+                        Object Detection Infantry - Html, Css, JavaScript, Python, SQL.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">
+            <h2 class="sub-title">Contact</h2>
+            <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+            <div class="contact-left">
+                <form action="">
+                    <input type="text" name="name" id="name" placeholder="Your Name"/>
+                    <input type="email" name="email" id="email" placeholder="Your Email ID" required/>
+                    <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message<i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+            <div class="v1"></div>
+            <div class="contact-right">
+                <div class="col address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info">
+                        <h2 class="title">Address</h2>
+                        <p>35/2229, Manojiyappa Street, Thanjavur-613009</p>
+                    </div>
+                </div>
+                <div class="col phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="info">
+                        <h2 class="title">Phone</h2>
+                        <p>+91 7708799791</p>
+                    </div>
+                </div>
+                <div class="col email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="info">
+                        <h2 class="title">Email</h2>
+                        <p>vsrinath1712@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col website">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div class="info">
+                        <h2 class="title">Linkedin</h2>
+                        <p>https://www.linkedin.com/in/
+                            srinath-v-750432256
+                        </p>
+                    </div>
+                </div>
+                <div class="col website">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="info">
+                        <h4 class="title">Github</h4>
+                        <p>https://github.com/srinath1712
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © Personal Portfolio | Made with
+            <i class="fa-solid fa-heart"></i> By <a href="#">Srinath</a>
+        </div>
+    </section>
+</div>
+
+<script src = "script.js"></script>
+
+</body>
+</html>
