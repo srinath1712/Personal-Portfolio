@@ -80,7 +80,7 @@ height: 100vh;
 background: linear-gradient(rgba(0,0,0,0.1), #0b0d19),
     url(assets/sri.jpg);
 background-size: cover;
-background-position:right;
+background-position:center;
 color:#fff;
 padding: 8% 6% 0;
 display: flex;
